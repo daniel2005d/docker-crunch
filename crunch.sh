@@ -1,9 +1,9 @@
 #!/bin/bash
 
-min=8
-max=8
-charset="80%%%%%%"
-lines=5
+#min=8
+#max=8
+#charset="80%%%%%%"
+#lines=5
 #output='demo3.txt'
 
 function usage(){
