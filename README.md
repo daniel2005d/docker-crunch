@@ -4,7 +4,7 @@ Script para ejecutar crunch desde docker.
 <h1>Instalación</h1>
 
 git clone https://github.com/daniel2005d/docker-crunch.git
-
+cd docker-crunch
 docker build -t crunch .
 
 <h1>Uso</h1>
