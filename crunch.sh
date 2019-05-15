@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#min=8
-#max=8
-#charset="ba%%"
-#lines=5
+min=8
+max=8
+charset="80%%%%%%"
+lines=5
 #output='demo3.txt'
 
 function usage(){
@@ -21,6 +21,7 @@ function usage(){
 
 }
 
+commando="crunch $min $max"
 
 if [ ! -z $charset ]
  then
@@ -30,6 +31,7 @@ if [ ! -z $charset ]
  	max=$size_charset
  	
 	commando+=" -t $charset"
+	echo "charset $charset"
 fi
 
 if [ -z $min ]
@@ -45,10 +47,6 @@ if [ -z $max ]
 		usage
 		exit 
 fi
-
-
-
-commando="crunch $min $max"
 
 
 if [ ! -z $lines ]
